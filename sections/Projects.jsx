@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import darkSaasLandingPage from "../assets/images/dark-saas-landing-page.png"
 import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png"
-import aiStartupLandingPage from "../assets/images/ai-startup-landing-Page.png"
+import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png"
 import grainImage from "../assets/images/grain.jpg"
 
 const portfolioProjects=[ 
