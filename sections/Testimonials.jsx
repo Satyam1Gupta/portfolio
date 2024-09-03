@@ -50,10 +50,10 @@ export default function Testimonials() {
         title="What Clients Say About Me"
         description="Don't just take my word for it. See what my clients have to say about my work."
       />
-      <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <div className="flex gap-8 flex-none">
+      <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="flex gap-8 flex-none animate-move-left [animation-duration:70s] hover:[animation-play-state:paused] pr-8">
           {testimonials.map((testimonial)=>(
-            <Card key={testimonial.name} classname="max-w-xs md:p-8 md:max-w-md">
+            <Card key={testimonial.name} classname="max-w-xs md:p-8 md:max-w-md hover:-rotate-3 transition duration-300 my-4">
               <div className="flex items-center gap-4">
                 <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
                   <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full"/>
