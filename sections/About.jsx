@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion"
+import { useRef } from 'react';
 import { Card } from "@/components/Card";
 
 import SectionHeader from "@/components/SectionHeader";
@@ -56,6 +59,8 @@ const hobbies = [
 ];
 
 export default function About() {
+	const constraintRef = useRef(null);
+	console.log("Constraint Reference:", constraintRef.current);
 	return (
 		<div className="py-20 lg:py-28 px-4 flex justify-center">
 			<div className="container">
@@ -83,11 +88,11 @@ export default function About() {
 								title="My Toolbox"
 								description="Explore the technologies and tools I use to turn my idea intoreality."
 							/>
-							<ToolboxItems toolBoxItems={toolBoxItems} className="mt-6" />
+							<ToolboxItems toolBoxItems={toolBoxItems} className="mt-6" itemsWrapperClassName="animate-move-left [animation-duration:30s]"/>
 							<ToolboxItems
 								toolBoxItems={toolBoxItems}
 								className="mt-6"
-								itemsWrapperClassName="-translate-x-1/2"
+								itemsWrapperClassName="animate-move-right [animation-duration:15s]"
 							/>
 						</Card>
 					</div>
@@ -98,18 +103,20 @@ export default function About() {
 								title="Beyond the Code"
 								description="Explore my interest and hobbies beyond the digital realm."
 							/>
-							<div className="relative flex-1">
+							<div className="relative flex-1 z-20" ref={constraintRef}>
 								{hobbies.map((hobby) => (
-									<div
-										key={hobby.title}
-										style={{ top: hobby.top, left: hobby.left }}
-										className="absolute inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
+									<motion.div
+									key={hobby.title}
+									style={{ top: hobby.top, left: hobby.left }}
+									className="absolute inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
+									drag
+									dragConstraints={constraintRef}
 									>
 										<span className="text-gray-950 font-medium">
 											{hobby.title}
 										</span>
 										<span>{hobby.emoji}</span>
-									</div>
+									</motion.div>
 								))}
 							</div>
 						</Card>
@@ -120,6 +127,7 @@ export default function About() {
 								className="h-full w-full object-cover"
 							/>
 							<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after-outline-2 after:rounded-full after:-outline-offset-2 after:outline-gray-950/30">
+							<div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 animate-ping [animation-duration:2s] -z-20"></div>
 								<Image
 									src={smileMemoji}
 									alt="smiling emoji"
