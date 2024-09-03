@@ -17,73 +17,81 @@ export default function Hero() {
             <div className="hero-ring size-[620px] "></div>
             <div className="hero-ring size-[820px] "></div>
             <div className="hero-ring size-[1020px] "></div>
-            <div className="hero-ring size-[1220px] "></div>
+            <div className="hero-ring size-[1220px] "></div> 
+
+            {/* orbitDuration,
+            shouldOrbit = false,
+            spinDuration,
+            shouldSpin = false, */}
 
             {/* Star Section */}
-            <HeroOrbit size={"800"} rotation={-72}>
-                <div className='size-28 text-emerald-300  inline-flex '>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" fill="currentColor"/>
-                    </svg>
-                </div>
-            </HeroOrbit>
-            <HeroOrbit size={"550"} rotation={20}>
-                <div className='size-12 text-emerald-300  inline-flex '>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" fill="currentColor"/>
-                    </svg>
-                </div>
-            </HeroOrbit>
-            <HeroOrbit size={"590"} rotation={98}>
-                <div className='size-8 text-emerald-300  inline-flex '>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" fill="currentColor"/>
-                    </svg>
-                </div>
-            </HeroOrbit>
-            <HeroOrbit size={"430"} rotation={-14}>
+           
+            <HeroOrbit shouldOrbit orbitDuration="30s" shouldSpin spinDuration="6s" size={"430"} rotation={-14}>
                 <div className='size-8 text-emerald-300/20  inline-flex '>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 12L10.1667 10.1667L12 1L13.8333 10.1667L23 12L13.8333 13.8333L12 23L10.1667 13.8333L1 12Z" fill="currentColor"/>
                     </svg>
                 </div>
             </HeroOrbit>
-            <HeroOrbit size={"440"} rotation={79}>
+            <HeroOrbit shouldOrbit orbitDuration="32s" shouldSpin spinDuration="6s" size={"440"} rotation={79}>
                 <div className='size-5 text-emerald-300/20  inline-flex '>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 12L10.1667 10.1667L12 1L13.8333 10.1667L23 12L13.8333 13.8333L12 23L10.1667 13.8333L1 12Z" fill="currentColor"/>
                     </svg>
                 </div>
             </HeroOrbit>
-            <HeroOrbit size={"530"} rotation={178}>
+            <HeroOrbit shouldOrbit orbitDuration="34s" shouldSpin spinDuration="6s" size={"530"} rotation={178}>
                 <div className='size-10 text-emerald-300/20  inline-flex '>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 12L10.1667 10.1667L12 1L13.8333 10.1667L23 12L13.8333 13.8333L12 23L10.1667 13.8333L1 12Z" fill="currentColor"/>
                     </svg>
                 </div>
             </HeroOrbit>
-            <HeroOrbit size={"710"} rotation={144}>
+            <HeroOrbit shouldOrbit orbitDuration="36s" shouldSpin spinDuration="6s" size={"520"} rotation={-41}>
+                <div className='size-2 bg-emerald-300/20 rounded-full inline-flex '></div>
+            </HeroOrbit>
+            <HeroOrbit shouldOrbit orbitDuration="38s" shouldSpin spinDuration="6s" size={"550"} rotation={20}>
+                <div className='size-12 text-emerald-300  inline-flex '>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </HeroOrbit>
+            <HeroOrbit shouldOrbit orbitDuration="40s" shouldSpin spinDuration="6s" size={"590"} rotation={98}>
+                <div className='size-8 text-emerald-300  inline-flex '>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </HeroOrbit>
+            <HeroOrbit shouldOrbit orbitDuration="42s" shouldSpin spinDuration="6s" size={"750"} rotation={-5}>
+                <div className='size-2 bg-emerald-300/20 rounded-full inline-flex '></div>
+            </HeroOrbit>
+            <HeroOrbit shouldOrbit orbitDuration="44s" shouldSpin spinDuration="6s" size={"710"} rotation={144}>
                 <div className='size-14 text-emerald-300/20  inline-flex '>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 12L10.1667 10.1667L12 1L13.8333 10.1667L23 12L13.8333 13.8333L12 23L10.1667 13.8333L1 12Z" fill="currentColor"/>
                     </svg>
                 </div>
             </HeroOrbit>
-            <HeroOrbit size={"720"} rotation={85}>
+            <HeroOrbit shouldOrbit orbitDuration="46s" shouldSpin spinDuration="6s" size={"720"} rotation={85}>
                 <div className='size-3 bg-emerald-300/20 rounded-full inline-flex '></div>
             </HeroOrbit>
-            <HeroOrbit size={"520"} rotation={-41}>
-                <div className='size-2 bg-emerald-300/20 rounded-full inline-flex '></div>
-            </HeroOrbit>
-            <HeroOrbit size={"750"} rotation={-5}>
-                <div className='size-2 bg-emerald-300/20 rounded-full inline-flex '></div>
+            <HeroOrbit shouldOrbit orbitDuration="48s" shouldSpin spinDuration="6s" size={"800"} rotation={-72}>
+                <div className='size-28 text-emerald-300  inline-flex '>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" fill="currentColor"/>
+                    </svg>
+                </div>
             </HeroOrbit>
         </div>
         <div className="flex flex-col items-center">
             <Image className='size-[100px]' 
             src={memojiIMage} alt="person peeking from behind laptop"/>
             <div className='flex items-center gap-4 bg-gray-950 border border-gray-800 rounded-lg px-4 py-1.5'>
-                <div className='bg-green-500 size-2.5 rounded-full'></div>
+                <div className='bg-green-500 size-2.5 rounded-full relative'>
+                    <div className='absolute inset-0 bg-green-500 rounded-full animate-ping-large'></div>
+                </div>
                 <div>Available for new projects</div>
             </div>
             <div className='max-w-lg mx-auto'>
