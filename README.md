@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio Website
 
-## Getting Started
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences as a developer, built using Next.js, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## 🚀 Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You can visit the live version of my portfolio website [here](#). (Add your live site URL)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: For building the React-based server-side rendered website.
+- **Tailwind CSS**: For styling and creating a responsive and visually appealing UI.
+- **Framer Motion**: For adding smooth and interactive animations.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ✨ Features
 
-## Learn More
+- **Beautiful UI**: A modern and clean design that highlights my work and skills.
+- **Smooth Animations**: Engaging animations to enhance the user experience.
+- **Responsive Design**: Optimized for all devices, from desktop to mobile.
+- **Interactive Elements**: Drag-and-drop interactions, hover effects, and more.
+- **Dynamic Content**: Showcases my projects, skills, hobbies, and interests.
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/components`: Reusable UI components like cards, headers, and toolboxes.
+- `/sections`: Different sections of the website such as Home, About, Projects, and Contact.
+- `/assets`: Contains static files.
+  - `/images`: Images used throughout the website.
+  - `/svg-icons`: SVG icons for various UI elements.
+- `/pages`: Main pages of the portfolio (e.g., Home, About, Projects).
+- `/styles`: Global and component-specific stylesheets.
+- `/utils`: Utility functions and helpers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ⚙️ Installation
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/Satyam1Gupta/portfolio.git
+   
+   cd portfolio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   npm install
+
+   npm run dev
+
+## Thank you for visiting my portfolio website! 🙌
+  
+
+
+<!-- Thanks for creating such high-quality content!!! Finally, completed this project,
+in case anyone wants to fork the code repo. Reference Link: https://github.com/Satyam1Gupta/portfolio -->
