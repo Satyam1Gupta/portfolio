@@ -11,10 +11,14 @@ import {
 	JavascriptIcon,
 	CSSIcon,
 	ReactIcon,
-	ChromeIcon,
 	GithubIcon,
+	NextJsIcon,
+	NodeIcon,
+	MongoDbIcon,
+	ExpressIcon,
+	Typescript
 } from "@/components/SvgIcons";
-import mapImage from "../assets/images/map.png";
+import mapImage from "../assets/images/my-map.jpg";
 import smileMemoji from "../assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolboxItems from "@/components/ToolboxItems";
@@ -25,8 +29,16 @@ const toolBoxItems = [
 		icon: <JavascriptIcon />,
 	},
 	{
+		title: "Typescript",
+		icon: <Typescript />,
+	},
+	{
 		title: "HTML5",
 		icon: <HTMLIcon />,
+	},
+	{
+		title: "Node Js",
+		icon: <NodeIcon />,
 	},
 	{
 		title: "CSS3",
@@ -37,12 +49,20 @@ const toolBoxItems = [
 		icon: <ReactIcon />,
 	},
 	{
-		title: "Chrome",
-		icon: <ChromeIcon />,
-	},
-	{
 		title: "Github",
 		icon: <GithubIcon />,
+	},
+	{
+		title: "Next.js",
+		icon: <NextJsIcon />,
+	},
+	{
+		title: "Mongo Db",
+		icon: <MongoDbIcon />,
+	},
+	{
+		title: "Express Js",
+		icon: <ExpressIcon />,
 	},
 ];
 const hobbies = [
@@ -60,9 +80,9 @@ const hobbies = [
 
 export default function About() {
 	const constraintRef = useRef(null);
-	console.log("Constraint Reference:", constraintRef.current);
+	//console.log("Constraint Reference:", constraintRef.current);
 	return (
-		<div className="py-20 lg:py-28 px-4 flex justify-center">
+		<div id="about" className="py-20 lg:py-28 px-4 flex justify-center">
 			<div className="container">
 				<SectionHeader
 					eyebrow="About Me"

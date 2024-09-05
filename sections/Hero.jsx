@@ -7,7 +7,7 @@ import HeroOrbit from '@/components/HeroOrbit';
 
 export default function Hero() {
   return (
-    <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
+    <div className='py-32 md:py-48 lg:py-52 relative z-0 overflow-x-clip'>
         <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
             <div className='absolute inset-0 -z-30 opacity-5'
                 style={{backgroundImage: `url(${grainImage.src})`}}
@@ -85,7 +85,7 @@ export default function Hero() {
                 </div>
             </HeroOrbit>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
             <Image className='size-[100px]' 
             src={memojiIMage} alt="person peeking from behind laptop"/>
             <div className='flex items-center gap-4 bg-gray-950 border border-gray-800 rounded-lg px-4 py-1.5'>
@@ -95,8 +95,8 @@ export default function Hero() {
                 <div>Available for new projects</div>
             </div>
             <div className='max-w-lg mx-auto'>
-                <h1 className='text-3xl md:text-5xl font-serif text-center mt-8 tracking-wide'>Building Exceptional User Experiences</h1>
-                <p className='mt-4 text-center md:text-lg text-gray-400'>I specialiazed in transforming design into functional, high-performing web application. Let's discuss your next project</p>
+                <h1 className='text-3xl md:text-5xl font-serif text-center mt-8 tracking-wide'>Turning Ideas into Reality</h1>
+                <p className='mt-4 text-center md:text-lg text-gray-400'>I specialize in building innovative, scalable web solutions with Next.js and the MERN stack, turning ideas into real-world applications. Let’s discuss your next project.</p>
             </div>
             <div className='mt-8 flex flex-col gap-4 md:flex-row justify-center'>
                 <button className='font-semibold inline-flex items-center h-12 px-6 gap-2 border border-white/15 rounded-xl'>
