@@ -96,7 +96,7 @@ export default function Hero() {
             </div>
             <div className='max-w-lg mx-auto'>
                 <h1 className='text-3xl md:text-5xl font-serif text-center mt-8 tracking-wide'>Turning Ideas into Reality</h1>
-                <p className='mt-4 text-center md:text-lg text-gray-400'>I specialize in building innovative, scalable web solutions with Next.js and the MERN stack, turning ideas into real-world applications. Let’s discuss your next project.</p>
+                <p className='px-3 mt-4 text-center md:text-lg text-gray-400'>I specialize in building innovative, scalable web solutions with Next.js and the MERN stack, turning ideas into real-world applications. Let’s discuss your next project.</p>
             </div>
             <div className='mt-8 flex flex-col gap-4 md:flex-row justify-center'>
                 <button className='font-semibold inline-flex items-center h-12 px-6 gap-2 border border-white/15 rounded-xl'>
