@@ -50,7 +50,7 @@ const portfolioProjects = [
 	  year: 2022,
 	  title: "Finalist - Full Stack Developer",
 	  results: [
-		{ title: "Developed a Scholarship Verification Portal for government use." },
+		{ title: "Developed a Scholarship Verification Portal for the Smart India Hackathon conducted by the MoE's Innovation Cell of India."},
 		{ title: "Automated the verification process for scholarship user's credentials." },
 		{ title: "Presented the solution to industry experts, earning national recognition." },
 	  ],
